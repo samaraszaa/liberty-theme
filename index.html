@@ -18,7 +18,7 @@
 </head>
 <body>
 	<!-- Header -->
-	<div class="container-fluid bg-dark text-light">
+	<div class="container-fluid bg-dark text-light mb-1">
 		<div class="row">
 			<div class="col-12 d-flex justify-content-center">
 				<h2 class="display-4">Liberty!</h2>
@@ -53,8 +53,26 @@
 	</div>
 
 	<!-- Carousel -->
-	<div>
-		.
+	<div id="carouselControl" class="carousel slide carousel-fade" data-ride="carousel">
+		<div class="carousel-inner"  style="width: 100%; height: 75vh;">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="assets/first-image-slide.jpg">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="assets/second-image-slide.jpg">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="assets/third-image-slide.jpg">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselControl" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselControl" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Próximo</span>
+		</a>
 	</div>
 
 	<!-- Aside -->
@@ -74,13 +92,13 @@
 
 	<!-- Footer -->
 	<footer class="card-footer bg-dark text-light">
-    <div class="row">
-      <div class="col-12 d-flex justify-content-center text-white mb-2">
-        <span>Feito com &#128155; por <a href="">Samara</a> |</span>
-        <span>| All Rights Reserved </span>
-      </div>
-    </div>
-  </footer>
+		<div class="row">
+			<div class="col-12 d-flex justify-content-center text-white mb-2">
+				<span>Feito com &#128155; por <a href="">Samara</a> |</span>
+				<span>| All Rights Reserved </span>
+			</div>
+		</div>
+	</footer>
 
 	
 	<!-- JQuery -->
