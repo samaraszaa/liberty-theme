@@ -25,7 +25,7 @@
 			</div>
 		</div>
 		<div class="row">
-		<!-- Navbar -->
+			<!-- Navbar -->
 			<div class="col-12 d-md-flex justify-content-md-center">
 				<nav class="navbar navbar-expand-md navbar-personal-dark bg-personal-dark">
 					<a class="navbar-brand" href="#"> </a>
@@ -36,13 +36,13 @@
 					<div class="collapse navbar-collapse" id="navMenu">
 						<ul class="navbar-nav">
 							<li class="nav-item active">
-								<a class="nav-link" href="#">Início</a>
+								<a class="nav-link lead" href="">Início</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Contato</a>
+								<a class="nav-link lead" href="#Contato">Contato</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Sobre</a>
+								<a class="nav-link lead" href="#Sobre">Sobre</a>
 							</li>
 						</ul>						
 					</div>
@@ -53,7 +53,7 @@
 
 	<!-- Carousel -->
 	<div id="carouselControl" class="carousel slide carousel-fade" data-ride="carousel">
-		<div class="carousel-inner" style="height: 75vmin">
+		<div class="carousel-inner" style="height: 65vmin">
 			<div class="carousel-item active">
 				<img class="d-block w-100" src="assets/first-image-slide.jpg">
 			</div>
@@ -80,32 +80,32 @@
 			<section class="col-sm-12 col-md-8">
 				<article class="p-3">
 					<header class="mb-3 pb-2 border-bottom">
-						<h3><a href="postpage.html">Título da Postagem</a></h3>
+						<h3 class="display-5"><a href="postpage.html">Título da Postagem</a></h3>
 					</header>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor...</p>
 					<hr>
 					<p class="text-muted">
-						Publicado em: <span class="badge badge-dark" id="data-post">12/11/19</span> por <span class="badge badge-dark" id="autor-post">Samara</span>
+						Publicado em: <span class="badge badge-personal-dark-gray" id="data-post">12/11/19</span> por <span class="badge badge-personal-dark-gray" id="autor-post">Samara</span>
 					</p>
 				</article>
 				<article class="p-3">
 					<header class="mb-3 pb-2 border-bottom">
-						<h3><a href="postpage.html">Título da Postagem</a></h3>
+						<h3 class="display-5"><a href="postpage.html">Título da Postagem</a></h3>
 					</header>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor...</p>
 					<hr>
 					<p class="text-muted">
-						Publicado em: <span class="badge badge-dark" id="data-post">12/11/19</span> por <span class="badge badge-dark" id="autor-post">Samara</span>
+						Publicado em: <span class="badge badge-personal-dark-gray" id="data-post">12/11/19</span> por <span class="badge badge-personal-dark-gray" id="autor-post">Samara</span>
 					</p>
 				</article>
 				<article class="p-3">
 					<header class="mb-3 pb-2 border-bottom">
-						<h3><a href="postpage.html">Título da Postagem</a></h3>
+						<h3 class="display-5"><a href="postpage.html">Título da Postagem</a></h3>
 					</header>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor...</p>
 					<hr>
 					<p class="text-muted">
-						Publicado em: <span class="badge badge-dark" id="data-post">12/11/19</span> por <span class="badge badge-dark" id="autor-post">Samara</span>
+						Publicado em: <span class="badge badge-personal-dark-gray" id="data-post">12/11/19</span> por <span class="badge badge-personal-dark-gray" id="autor-post">Samara</span>
 					</p>
 				</article>
 
@@ -138,7 +138,7 @@
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Buscar: ">
 							<div class="input-group-append">
-								<button class="btn btn-dark" type="button">Ok</button>
+								<button class="btn btn-personal-dark-gray" type="button">Ok</button>
 							</div>
 						</div>
 					</form>
@@ -176,7 +176,7 @@
 	<div class="container mt-3">
 		<div class="row">
 			<div class="col-12 mb-3 text-center">
-				<h2>Fale Conosco: </h2>     
+				<a name="Contato" class="h2">Fale Conosco:</a>     
 			</div>
 		</div>
 		<div class="row justify-content-center">
@@ -193,13 +193,24 @@
 						</div>
 					</div>
 					<div class="form-row">
+						<div class="form-group col-sm-6">
+							<select id="inputAssunto" class="form-control" required>
+								<option value="" disabled selected>Assunto:</option>
+								<option value="sugestao">Sugestão</option>
+								<option value="reclamacao">Reclamação</option>
+								<option value="duvida">Dúvidas</option>
+								<option value="comercial">Contato Comercial</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
 						<div class="form-group col-sm-8">
 							<textarea class="form-control" id="textAreaForm" rows="5" required>Digite sua Mensagem</textarea>
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-sm-8">
-							<button class="btn btn-secondary" type="Submit">Enviar</button>
+							<button class="btn btn-personal-dark" type="Submit">Enviar</button>
 						</div>
 					</div>
 				</form>
@@ -208,7 +219,7 @@
 	</div>
 
 	<!-- Footer -->
-	<footer class="card-footer bg-dark text-light">
+	<footer class="card-footer bg-personal-dark text-light">
 		<div class="row">
 			<div class="col-12 d-flex justify-content-center text-white mb-2">
 				<span>Feito com &#128155; por <a href="">Samara</a> | All Rights Reserved </span>
